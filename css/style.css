@@ -24,7 +24,7 @@ body {
 }
 .container {
     width: 80%;
-    /* height: 80vh; */
+    height: 80vh;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -45,6 +45,13 @@ body {
 .arrow-size {
     font-size: 0.9em;
 }
+.utility-color {
+    color: var(--utility-green);
+}
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
 
 /* main */
 
@@ -53,11 +60,12 @@ main {
     width: 100%;
     height: 100vh;
     position: relative;
+    margin-bottom: 5vh;
 }
 .view-tools {
-    position: absolute;
-    top: 10px;
-    right: 5px;
+    position: fixed;
+    top: 1vh;
+    right: 0.5vw;
 }
 .view-tools > * {
     font-size: 0.9em;
@@ -79,7 +87,7 @@ img {
     background-color: rgba(0, 0, 0, 0.3);
     padding: 5px;
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
     left: 0;
 }
 
@@ -89,7 +97,10 @@ footer {
     background-color: var(--footer-bg);
     color: white;
     width: 100%;
-    height: 70px;
+    height: 5vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 .wrapper {
     height: 70px;
@@ -98,9 +109,11 @@ footer {
     padding: 5px 0;
 }
 .right-footer {
-    color: var(--utility-red);
     background-color: var(--button-bg);
     padding: 10px;
+}
+.right-footer > a {
+    color: var(--utility-red);
 }
 
 /* flex */
