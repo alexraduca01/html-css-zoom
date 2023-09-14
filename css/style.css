@@ -24,7 +24,6 @@ body {
 }
 .container {
     width: 80%;
-    height: 80vh;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -87,7 +86,7 @@ img {
     background-color: rgba(0, 0, 0, 0.3);
     padding: 5px;
     position: absolute;
-    bottom: 10px;
+    bottom: 0;
     left: 0;
 }
 
